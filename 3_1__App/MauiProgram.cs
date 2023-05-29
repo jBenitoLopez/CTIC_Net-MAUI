@@ -22,3 +22,13 @@ public static class MauiProgram
 		return builder.Build();
 	}
 }
+
+public interface IVaxiDrez
+{
+
+}
+
+public class VaxiDrez: IVaxiDrez
+{
+
+}
