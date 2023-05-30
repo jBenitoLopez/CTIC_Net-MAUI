@@ -10,6 +10,9 @@ public partial class App : Application
 
         var boton = new Button();
         boton.Text = "Generar nueva Ventana";
+        boton.FontSize = 48;
+        boton.FontFamily = "AnsttingKishon";
+
         boton.Clicked += (s,a) => { 
             var ventana = new Window(new ContentPage());
             ventana.Created += (s, a) => System.Diagnostics.Debug.WriteLine(nameof(ventana.Created));
