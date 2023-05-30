@@ -9,7 +9,13 @@ public partial class App : Application
 		//MainPage = new AppShell();
         MainPage = new ContentPage()
 		{
-			Content = new Label() { Text="Hola Mundo"}
+			#if ANDROID
+				Content = new Label() { Text = new NameDevice().GetName() }
+			#elif WINDOWS
+
+			#elif IOS
+
+			#endif
 		};
 	}
 }
